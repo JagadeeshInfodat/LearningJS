@@ -1,0 +1,107 @@
+Template literal:
+-->typeof : is used to find the type of a varaiable.
+
+`You are ${} old.`
+
+Prompt -->used to get user inputs.
+Type Conversions:
+    (number, string, boolean)
+    
+Varaiables:
+    let
+    var
+    const 
+alwaya Properties declare with "Const" type only.
+We can add, delete modify the property values:
+
+Object:
+        const obj={
+            key:value
+                 };
+Ex:
+    const Person={name:"Surya",age:23};
+
+
+
+Nested Objects
+Objects Methods(): These are the actions that can be performed on Objects.
+
+Display Objects:
+1.Displayin object properties in loops:
+2.Without loop we can use (object.Values(),returns array of values of keys.);
+3.Object Constructor function():
+    Adding Property to Constructor:  <----  we can't add a property to a Constructor ,but we can add to a Object of a constructor.
+
+function Person(name,age,color)
+{
+    this.Fname=name,
+    this.age=age,
+    this.color=color;
+}
+
+const obj=new Person('Ram',29,'white');
+obj.Status=true;   ---> Acceptable             [We can add a property to an 'obj'.]
+XX Person.Status=true;   ---> Not Acceptable!.    [We can't add a property to a Constructor(Person)]
+
+
+Like an object having methods, Constructor function also having methods().
+
+function Person(name,age,color)
+{
+    this.Fname=name,
+    this.age=age,
+    this.color=color;
+    this.alldetails=function ()
+    {
+        return `His name is ${this.Fname} and he is ${this.age} old.`;
+    }
+}
+
+const obj=new Person('Ram',29,'white');
+document.getElementById('<id>').textContent=obj.alldetails();
+
+Property Default Values():
+        function Person(name,age,color)
+        {
+            this.Fname=name;
+            this.age=age;
+            this.color=color;
+            this.language="Telugu";  --> We can use ';', cause we are assigning values(I think so).
+        }
+Note:  We can't add a method to a Constructor like adding property to a constructor(Person), but we can add methods to "Constructor Object".
+        Person.AllDetails=function()
+        {  return this.first+" "+this.age. }            ---> Not Acceptable!
+
+
+
+ //Events:
+
+ A button having -- onclick()
+                    onMouseover()
+                    onMouseOut()
+                    
+
+String Functions:
+We can find the length by using built in function (.length)
+sup()
+Escape characters:
+
+\'  --> '
+\"  --> "
+\\  --> \
+\t --> tab space between strings
+\r --> recursive ----- ex: "This is \r Jagadeesh"  o/p--> Jagadeesh
+\n --> new line.
+
+
+at():
+Used to retreive the character of a string.
+It accepts both + & - values
++ values considers from starting of a string and - value consider from backward of a string.
+For an empty string the value of str.at(0)===> gives us "Undefined" o/p.
+Even after the index was out of range, we can see "Undefined" as o/p.
+
+
+
+charAt():
+Used 
