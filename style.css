@@ -1,0 +1,30 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:hsla(40, 88%, 34%, 0.842);
+    color: hsl(0, 0%, 86%); 
+    font-size: 1em;
+}
+
+p{
+    color:hsl(24, 85%, 21%)
+}
+h1{
+    color:hsl(24, 85%, 21%);
+}
+h2{
+    color:hsl(24, 85%, 21%);
+}
+h3{
+    color:hsl(24, 85%, 21%);  
+}
+label{
+    color:hsl(24, 85%, 21%)
+}
+#btnContainer{
+    text-align: center;
+}
+#countResult{
+    text-align: center;font-size: 3em;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
